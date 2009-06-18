@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<ItemDefinitions>
+	<ItemDef id="0" name="Air vent" ordering="0" image_file="floor_vent.jpg" description="Floor mounted air vent" category="Floor mounted" height="0" flipable="false">
+		<Poly fill_colour="0xA0A0A0" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.1" y="0"/>
+			<Vertex x="0.095" y="0.031"/>
+			<Vertex x="0.081" y="0.059"/>
+			<Vertex x="0.059" y="0.081"/>
+			<Vertex x="0.031" y="0.095"/>
+			<Vertex x="0" y="0.1"/>
+			<Vertex x="-0.031" y="0.095"/>
+			<Vertex x="-0.059" y="0.081"/>
+			<Vertex x="-0.081" y="0.059"/>
+			<Vertex x="-0.095" y="0.031"/>
+			<Vertex x="-0.1" y="0"/>
+			<Vertex x="-0.095" y="-0.031"/>
+			<Vertex x="-0.081" y="-0.059"/>
+			<Vertex x="-0.059" y="-0.081"/>
+			<Vertex x="-0.031" y="-0.095"/>
+			<Vertex x="0" y="-0.1"/>
+			<Vertex x="0.031" y="-0.095"/>
+			<Vertex x="0.059" y="-0.081"/>
+			<Vertex x="0.081" y="-0.059"/>
+			<Vertex x="0.095" y="-0.031"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="1" name="Floor box" ordering="10" image_file="floor_box.jpg" description="Floor box containing network and phone sockets" category="Floor mounted" height="0" flipable="false" field_label="Id (e.g. WC2A-01)">
+		<Poly fill_colour="0x505050" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.177" y="-0.115"/>
+			<Vertex x="0.177" y="-0.115"/>
+			<Vertex x="0.177" y="0.115"/>
+			<Vertex x="-0.177" y="0.115"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="2" name="Corner desk (light style)" ordering="20" image_file="desk_new.jpg" description="The newest type of desk in the CL" category="Desks and tables" height="5" flipable="true">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x8e6d50" edge_alpha="1">
+			<Vertex x="-0.4" y="-0.8"/>
+			<Vertex x="-0.42" y="-0.676"/>
+			<Vertex x="-0.476" y="-0.565"/>
+			<Vertex x="-0.565" y="-0.476"/>
+			<Vertex x="-0.676" y="-0.42"/>
+			<Vertex x="-0.8" y="-0.4"/>
+			<Vertex x="-1.0" y="-0.4"/>
+			<Vertex x="-1.0" y="0.4"/>
+			<Vertex x="0.4" y="0.4"/>
+			<Vertex x="0.4" y="-1.4"/>
+			<Vertex x="-0.4" y="-1.4"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="3" name="Corner desk (dark style)" ordering="30" image_file="desk_intel.jpg" description="As found in the Opera corridor, the Intel lab and elsewhere" category="Desks and tables" height="5" flipable="true">
+		<Poly fill_colour="0xd3c76d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.400" y="-0.700"/>
+			<Vertex x="-0.415" y="-0.607"/>
+			<Vertex x="-0.457" y="-0.524"/>
+			<Vertex x="-0.524" y="-0.457"/>
+			<Vertex x="-0.607" y="-0.415"/>
+			<Vertex x="-0.700" y="-0.400"/>
+			<Vertex x="-1.200" y="-0.400"/>
+			<Vertex x="-1.200" y="0.400"/>
+			<Vertex x="0.400" y="0.400"/>
+			<Vertex x="0.400" y="-1.200"/>
+			<Vertex x="-0.400" y="-1.200"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="4" name="Corner desk (grey style)" ordering="40" image_file="desk_grey.jpg" description="As found in some writing up rooms" category="Desks and tables" height="5" flipable="true">
+		<Poly fill_colour="0x999691" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.34" y="-0.54"/>
+			<Vertex x="-0.350" y="-0.478"/>
+			<Vertex x="-0.378" y="-0.422"/>
+			<Vertex x="-0.422" y="-0.378"/>
+			<Vertex x="-0.478" y="-0.350"/>
+			<Vertex x="-0.54" y="-0.34"/>
+			<Vertex x="-1.26" y="-0.34"/>
+			<Vertex x="-1.26" y="0.34"/>
+			<Vertex x="0.34" y="0.34"/>
+			<Vertex x="0.34" y="-1.26"/>
+			<Vertex x="-0.34" y="-1.26"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="5" name="Large square desk (new style)" ordering="50" image_file="square_desk.jpg" description="1.2m edge. 4 Legs. As found in the library" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.6" y="-0.6"/>
+			<Vertex x="0.6" y="-0.6"/>
+			<Vertex x="0.6" y="0.6"/>
+			<Vertex x="-0.6" y="0.6"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="6" name="Small square desk (new style)" ordering="60" image_file="square_desk_small.jpg" description="0.8m edge. Round base" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.4" y="-0.4"/>
+			<Vertex x="0.4" y="-0.4"/>
+			<Vertex x="0.4" y="0.4"/>
+			<Vertex x="-0.4" y="0.4"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="7" name="Rectangular desk (new style)" ordering="65" image_file="rectangular_desk.jpg" description="1.6m x 0.8m. As found in supervision alcoves" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xd3c76d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.8" y="-0.4"/>
+			<Vertex x="0.8" y="-0.4"/>
+			<Vertex x="0.8" y="0.4"/>
+			<Vertex x="-0.8" y="0.4"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="8" name="Rectangular desk (grey style)" ordering="70" image_file="rectangular_desk_grey.jpg" description="As found in some writing up rooms" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0x999691" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.4" y="-0.34"/>
+			<Vertex x="0.4" y="-0.34"/>
+			<Vertex x="0.4" y="0.34"/>
+			<Vertex x="-0.4" y="0.34"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="9" name="Coffee table" ordering="80" image_file="coffee_table.jpg" description="Oval coffee table as found in the first floor common room" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="1.000" y="0.000"/>
+			<Vertex x="0.951" y="0.185"/>
+			<Vertex x="0.809" y="0.353"/>
+			<Vertex x="0.588" y="0.485"/>
+			<Vertex x="0.309" y="0.571"/>
+			<Vertex x="0.000" y="0.600"/>
+			<Vertex x="-0.309" y="0.571"/>
+			<Vertex x="-0.588" y="0.485"/>
+			<Vertex x="-0.809" y="0.353"/>
+			<Vertex x="-0.951" y="0.185"/>
+			<Vertex x="-1.000" y="0.000"/>
+			<Vertex x="-0.951" y="-0.185"/>
+			<Vertex x="-0.809" y="-0.353"/>
+			<Vertex x="-0.588" y="-0.485"/>
+			<Vertex x="-0.309" y="-0.571"/>
+			<Vertex x="0.000" y="-0.600"/>
+			<Vertex x="0.309" y="-0.571"/>
+			<Vertex x="0.588" y="-0.485"/>
+			<Vertex x="0.809" y="-0.353"/>
+			<Vertex x="0.951" y="-0.185"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="10" name="Coffee table (small)" ordering="85" image_file="coffee_table2.jpg" description="Rectangular coffee table" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.500" y="0.250"/>
+			<Vertex x="-0.300" y="0.30"/>
+			<Vertex x="0.300" y="0.30"/>
+			<Vertex x="0.500" y="0.250"/>
+			<Vertex x="0.500" y="-0.250"/>
+			<Vertex x="0.300" y="-0.300"/>
+			<Vertex x="-0.300" y="-0.300"/>
+			<Vertex x="-0.500" y="-0.250"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="11" name="Round table" ordering="90" image_file="round_table.jpg" description="1.2m diameter" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="0.600" y="0.000"/>
+			<Vertex x="0.571" y="0.185"/>
+			<Vertex x="0.485" y="0.353"/>
+			<Vertex x="0.353" y="0.485"/>
+			<Vertex x="0.185" y="0.571"/>
+			<Vertex x="0.000" y="0.600"/>
+			<Vertex x="-0.185" y="0.571"/>
+			<Vertex x="-0.353" y="0.485"/>
+			<Vertex x="-0.485" y="0.353"/>
+			<Vertex x="-0.571" y="0.185"/>
+			<Vertex x="-0.600" y="0.000"/>
+			<Vertex x="-0.571" y="-0.185"/>
+			<Vertex x="-0.485" y="-0.353"/>
+			<Vertex x="-0.353" y="-0.485"/>
+			<Vertex x="-0.185" y="-0.571"/>
+			<Vertex x="0.000" y="-0.600"/>
+			<Vertex x="0.185" y="-0.571"/>
+			<Vertex x="0.353" y="-0.485"/>
+			<Vertex x="0.485" y="-0.353"/>
+			<Vertex x="0.571" y="-0.185"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="12" name="Half circle table" ordering="100" image_file="half_circle_table.jpg" description="1.6m diameter" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="0.800" y="-0.400"/>
+				<Vertex x="0.761" y="-0.153"/>
+				<Vertex x="0.647" y="0.070"/>
+				<Vertex x="0.470" y="0.247"/>
+				<Vertex x="0.247" y="0.361"/>
+				<Vertex x="0.000" y="0.400"/>
+				<Vertex x="-0.247" y="0.361"/>
+				<Vertex x="-0.470" y="0.247"/>
+				<Vertex x="-0.647" y="0.070"/>
+				<Vertex x="-0.761" y="-0.153"/>
+				<Vertex x="-0.800" y="-0.400"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="13" name="Work bench" ordering="105" image_file="work_bench.jpg" description="1.4m x 0.45m. Thin work desk/bench" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xd3c76d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.7" y="-0.22"/>
+			<Vertex x="0.7" y="-0.22"/>
+			<Vertex x="0.7" y="0.22"/>
+			<Vertex x="-0.7" y="0.22"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="14" name="Decagon workbench" ordering="110" image_file="decagon.jpg" description="As found in the Intel room" category="Desks and tables" height="5" flipable="false">
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1"><Vertex x="-0.550" y="1.700"/>
+			<Vertex x="-0.550" y="1.700"/>
+			<Vertex x="-0.193" y="0.600"/>
+			<Vertex x="0.193" y="0.600"/>
+			<Vertex x="0.550" y="1.700"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">		
+			<Vertex x="-1.440" y="1.053"/>
+			<Vertex x="-0.504" y="0.374"/>
+			<Vertex x="-0.193" y="0.600"/>
+			<Vertex x="-0.550" y="1.700"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-1.780" y="0.007"/>
+			<Vertex x="-0.623" y="0.007"/>
+			<Vertex x="-0.504" y="0.374"/>
+			<Vertex x="-1.440" y="1.053"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-1.440" y="-1.039"/>
+			<Vertex x="-0.504" y="-0.359"/>
+			<Vertex x="-0.623" y="0.007"/>
+			<Vertex x="-1.780" y="0.007"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.550" y="-1.685"/>
+			<Vertex x="-0.193" y="-0.585"/>
+			<Vertex x="-0.504" y="-0.359"/>
+			<Vertex x="-1.440" y="-1.039"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.550" y="-1.685"/>
+			<Vertex x="0.193" y="-0.585"/>
+			<Vertex x="-0.193" y="-0.585"/>
+			<Vertex x="-0.550" y="-1.685"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="1.440" y="-1.039"/>
+			<Vertex x="0.504" y="-0.359"/>
+			<Vertex x="0.193" y="-0.585"/>
+			<Vertex x="0.550" y="-1.685"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="1.780" y="0.007"/>
+			<Vertex x="0.623" y="0.007"/>
+			<Vertex x="0.504" y="-0.359"/>
+			<Vertex x="1.440" y="-1.039"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="1.440" y="1.053"/>
+			<Vertex x="0.504" y="0.374"/>
+			<Vertex x="0.623" y="0.007"/>
+			<Vertex x="1.780" y="0.007"/>
+		</Poly>
+		<Poly fill_colour="0xb7b5d3" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.550" y="1.700"/>
+			<Vertex x="0.193" y="0.600"/>
+			<Vertex x="0.504" y="0.374"/>
+			<Vertex x="1.440" y="1.053"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="15" name="Sofa" ordering="120" image_file="sofa.jpg" description="" height="4" category="Chairs" flipable="false">
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">		
+			<Vertex x="-0.420" y="0.350"/>
+			<Vertex x="-0.570" y="0.320"/>
+			<Vertex x="-0.630" y="0.260"/>
+			<Vertex x="-0.680" y="0.180"/>
+			<Vertex x="-0.680" y="-0.310"/>
+			<Vertex x="-0.640" y="-0.350"/>
+			<Vertex x="-0.560" y="-0.350"/>
+			<Vertex x="-0.520" y="-0.310"/>
+			<Vertex x="-0.520" y="0.130"/>
+			<Vertex x="-0.460" y="0.180"/>
+			<Vertex x="0.460" y="0.180"/>
+			<Vertex x="0.520" y="0.130"/>
+			<Vertex x="0.520" y="-0.310"/>
+			<Vertex x="0.560" y="-0.350"/>
+			<Vertex x="0.640" y="-0.350"/>
+			<Vertex x="0.680" y="-0.310"/>
+			<Vertex x="0.680" y="0.180"/>
+			<Vertex x="0.630" y="0.260"/>
+			<Vertex x="0.570" y="0.320"/>
+			<Vertex x="0.420" y="0.350"/>
+		</Poly>
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.520" y="-0.280"/>
+			<Vertex x="-0.520" y="0.130"/>
+			<Vertex x="-0.460" y="0.180"/>
+			<Vertex x="0.460" y="0.180"/>
+			<Vertex x="0.520" y="0.130"/>
+			<Vertex x="0.520" y="-0.280"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="16" name="Soft chair" ordering="130" image_file="bluechair.jpg" description="Various types" category="Chairs" height="4" flipable="false">
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">		
+			<Vertex x="-0.120" y="0.350"/>
+			<Vertex x="-0.270" y="0.320"/>
+			<Vertex x="-0.330" y="0.260"/>
+			<Vertex x="-0.380" y="0.180"/>
+			<Vertex x="-0.380" y="-0.310"/>
+			<Vertex x="-0.340" y="-0.350"/>
+			<Vertex x="-0.260" y="-0.350"/>
+			<Vertex x="-0.220" y="-0.310"/>
+			<Vertex x="-0.220" y="0.130"/>
+			<Vertex x="-0.160" y="0.180"/>
+			<Vertex x="0.160" y="0.180"/>
+			<Vertex x="0.220" y="0.130"/>
+			<Vertex x="0.220" y="-0.310"/>
+			<Vertex x="0.260" y="-0.350"/>
+			<Vertex x="0.340" y="-0.350"/>
+			<Vertex x="0.380" y="-0.310"/>
+			<Vertex x="0.380" y="0.180"/>
+			<Vertex x="0.330" y="0.260"/>
+			<Vertex x="0.270" y="0.320"/>
+			<Vertex x="0.120" y="0.350"/>
+		</Poly>
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.220" y="-0.280"/>
+			<Vertex x="-0.220" y="0.130"/>
+			<Vertex x="-0.160" y="0.180"/>
+			<Vertex x="0.160" y="0.180"/>
+			<Vertex x="0.220" y="0.130"/>
+			<Vertex x="0.220" y="-0.280"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="17" name="Low chair" ordering="140" image_file="lowchair.jpg" description="Various types" category="Chairs" height="4" flipable="false">
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">		
+			<Vertex x="-0.240" y="0.300"/>
+			<Vertex x="-0.280" y="0.260"/>
+			<Vertex x="-0.280" y="-0.260"/>
+			<Vertex x="-0.240" y="-0.300"/>
+			<Vertex x="0.240" y="-0.300"/>
+			<Vertex x="0.280" y="-0.260"/>
+			<Vertex x="0.280" y="0.260"/>
+			<Vertex x="0.240" y="0.300"/>
+		</Poly>
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.240" y="0.300"/>
+			<Vertex x="-0.280" y="0.260"/>
+			<Vertex x="-0.280" y="0.160"/>
+			<Vertex x="-0.240" y="0.120"/>
+			<Vertex x="0.240" y="0.120"/>
+			<Vertex x="0.280" y="0.160"/>
+			<Vertex x="0.280" y="0.260"/>
+			<Vertex x="0.240" y="0.300"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="18" name="Swivel chair" ordering="150" image_file="swivelchair.jpg" description="Desk chair (various types)" category="Chairs" height="4" flipable="false">
+		<Poly fill_colour="0x000000" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.010" y="0.300"/>
+			<Vertex x="-0.020" y="0.025"/>
+			<Vertex x="-0.282" y="0.102"/>
+			<Vertex x="-0.288" y="0.083"/>
+			<Vertex x="-0.031" y="-0.008"/>
+			<Vertex x="-0.184" y="-0.237"/>
+			<Vertex x="-0.168" y="-0.249"/>
+			<Vertex x="-0.001" y="-0.032"/>
+			<Vertex x="0.168" y="-0.249"/>
+			<Vertex x="0.184" y="-0.237"/>
+			<Vertex x="0.030" y="-0.011"/>
+			<Vertex x="0.288" y="0.083"/>
+			<Vertex x="0.282" y="0.102"/>
+			<Vertex x="0.020" y="0.025"/>
+			<Vertex x="0.010" y="0.300"/>
+		</Poly>
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.3" y="-0.19"/>
+			<Vertex x="-0.24" y="-0.26"/>
+			<Vertex x="-0.13" y="-0.3"/>
+			<Vertex x="0.13" y="-0.3"/>
+			<Vertex x="0.24" y="-0.26"/>
+			<Vertex x="0.3" y="-0.19"/>
+			<Vertex x="0.3" y="0.19"/>
+			<Vertex x="0.24" y="0.26"/>
+			<Vertex x="0.13" y="0.3"/>
+			<Vertex x="-0.13" y="0.3"/>
+			<Vertex x="-0.24" y="0.26"/>
+			<Vertex x="-0.3" y="0.19"/>
+		</Poly>
+		<Poly fill_colour="0x6994c9" fill_alpha="0.7" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.13" y="0.3"/>
+			<Vertex x="-0.24" y="0.26"/>
+			<Vertex x="-0.3" y="0.19"/>
+			<Vertex x="-0.3" y="0.15"/>
+			<Vertex x="-0.24" y="0.11"/>
+			<Vertex x="-0.2" y="0.11"/>
+			<Vertex x="-0.1" y="0.16"/>
+			<Vertex x="0.1" y="0.16"/>
+			<Vertex x="0.2" y="0.11"/>
+			<Vertex x="0.24" y="0.11"/>
+			<Vertex x="0.3" y="0.15"/>
+			<Vertex x="0.3" y="0.19"/>
+			<Vertex x="0.24" y="0.26"/>
+			<Vertex x="0.13" y="0.3"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="19" name="Wooden chair" ordering="145" image_file="wooden_chair.jpg" description="Various types" category="Chairs" height="4" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.7" edge_colour="0x7e5d30" edge_alpha="1">		
+			<Vertex x="-0.11" y="0.220"/>
+			<Vertex x="-0.2" y="0.08"/>
+			<Vertex x="-0.22" y="0"/>
+			<Vertex x="-0.2" y="-0.08"/>
+			<Vertex x="-0.13" y="-0.16"/>
+			<Vertex x="0" y="-0.2"/>
+			<Vertex x="0.13" y="-0.16"/>
+			<Vertex x="0.2" y="-0.08"/>
+			<Vertex x="0.22" y="0"/>
+			<Vertex x="0.2" y="0.08"/>
+			<Vertex x="0.11" y="0.220"/>
+		</Poly>
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.7" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.05" y="0.25"/>
+			<Vertex x="-0.12" y="0.230"/>
+			<Vertex x="-0.15" y="0.200"/>
+			<Vertex x="-0.16" y="0.170"/>
+			<Vertex x="-0.15" y="0.160"/>
+			<Vertex x="-0.14" y="0.160"/>
+			<Vertex x="-0.12" y="0.190"/>
+			<Vertex x="-0.07" y="0.210"/>
+			<Vertex x="0.07" y="0.210"/>
+			<Vertex x="0.12" y="0.190"/>
+			<Vertex x="0.14" y="0.160"/>
+			<Vertex x="0.15" y="0.160"/>
+			<Vertex x="0.16" y="0.170"/>
+			<Vertex x="0.15" y="0.200"/>
+			<Vertex x="0.12" y="0.230"/>
+			<Vertex x="0.05" y="0.25"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="20" name="Pedestal drawers (new style)" ordering="160" image_file="pedestal_drawers_new.jpg" description="New style pedestal drawers" category="Storage" height="5" flipable="false">
+		<Poly fill_colour="0xf3e78d" fill_alpha="0.65" edge_colour="0x8e6d50" edge_alpha="1">
+			<Vertex x="-0.4" y="-0.205"/>
+			<Vertex x="0.4" y="-0.205"/>
+			<Vertex x="0.4" y="0.205"/>
+			<Vertex x="-0.4" y="0.205"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="21" name="Pedestal drawers (Intel style)" ordering="170" image_file="pedestal_drawers_intel.jpg" description="Pedestal drawers as found in the old Intel lab" category="Storage" height="5" flipable="false">
+		<Poly fill_colour="0xd3c76d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.4" y="-0.21"/>
+			<Vertex x="0.4" y="-0.21"/>
+			<Vertex x="0.4" y="0.21"/>
+			<Vertex x="-0.4" y="0.21"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="22" name="Pedestal drawers (grey style)" ordering="180" image_file="pedestal_drawers_grey.jpg" description="Grey pedestal drawers as found in some writing up rooms" category="Storage" height="5" flipable="false">
+		<Poly fill_colour="0x999691" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.41" y="-0.21"/>
+			<Vertex x="0.41" y="-0.21"/>
+			<Vertex x="0.41" y="0.21"/>
+			<Vertex x="-0.41" y="0.21"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="23" name="Cupboard" ordering="190" image_file="cupboard.jpg" description="0.75m wide, 0.35m deep" category="Storage" height="8" flipable="false">
+		<Poly fill_colour="0x826f4f" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.38" y="-0.17"/>
+			<Vertex x="0.38" y="-0.17"/>
+			<Vertex x="0.38" y="0.17"/>
+			<Vertex x="-0.38" y="0.17"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="24" name="Cupboard (large)" ordering="200" image_file="cupboard_large.jpg" description="0.92m wide, 0.54m deep" category="Storage" height="8" flipable="false">
+		<Poly fill_colour="0x826f4f" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.46" y="-0.27"/>
+			<Vertex x="0.46" y="-0.27"/>
+			<Vertex x="0.46" y="0.27"/>
+			<Vertex x="-0.46" y="0.27"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="25" name="Shelves (free standing)" ordering="205" image_file="shelves_freestanding.jpg" description="Free standing shelves / book case" category="Storage" height="8" flipable="false">
+		<Poly fill_colour="0xd3c76d" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.37" y="-0.16"/>
+			<Vertex x="0.37" y="-0.16"/>
+			<Vertex x="0.37" y="0.16"/>
+			<Vertex x="-0.37" y="0.16"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="26" name="Filing cabinet" ordering="210" image_file="filing_cabinet.jpg" description="Free standing (various types)" category="Storage" height="8" flipable="false">
+		<Poly fill_colour="0x777868" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.310" y="-0.235"/>
+			<Vertex x="0.310" y="-0.235"/>
+			<Vertex x="0.310" y="0.235"/>
+			<Vertex x="-0.310" y="0.235"/>
+		</Poly>
+		<Poly fill_colour="0x777868" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.310" y="-0.030"/>
+			<Vertex x="0.320" y="-0.030"/>
+			<Vertex x="0.320" y="0.030"/>
+			<Vertex x="0.310" y="0.030"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="27" name="Window" ordering="220" image_file="window.jpg" description="" category="Wall" height="10" flipable="false">
+		<Poly fill_colour="0x7777DD" fill_alpha="0.65" edge_colour="0x3333AA" edge_alpha="1">
+			<Vertex x="-0.58" y="-0.03"/>
+			<Vertex x="0.58" y="-0.03"/>
+			<Vertex x="0.58" y="0.03"/>
+			<Vertex x="-0.58" y="0.03"/>
+		</Poly>
+		<Poly fill_colour="0x7777DD" fill_alpha="0.65" edge_colour="0x3333AA" edge_alpha="1">
+			<Vertex x="-0.58" y="-0.03"/>
+			<Vertex x="-0.56" y="-0.03"/>
+			<Vertex x="-0.56" y="0.03"/>
+			<Vertex x="-0.58" y="0.03"/>
+		</Poly>
+		<Poly fill_colour="0x7777DD" fill_alpha="0.65" edge_colour="0x3333AA" edge_alpha="1">
+			<Vertex x="0.56" y="-0.03"/>
+			<Vertex x="0.58" y="-0.03"/>
+			<Vertex x="0.58" y="0.03"/>
+			<Vertex x="0.56" y="0.03"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="28" name="White board" ordering="230" image_file="white_board.jpg" description="Regular white board (1.2m wide)" category="Wall" height="10" flipable="false">
+		<Poly fill_colour="0xFFFFFF" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.6" y="-0.015"/>
+			<Vertex x="0.6" y="-0.015"/>
+			<Vertex x="0.6" y="0.015"/>
+			<Vertex x="-0.6" y="0.015"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="29" name="White board (large)" ordering="240" image_file="white_board_large.jpg" description="Large white board (2.4m wide)" category="Wall" height="10" flipable="false">
+		<Poly fill_colour="0xFFFFFF" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-1.2" y="-0.015"/>
+			<Vertex x="1.2" y="-0.015"/>
+			<Vertex x="1.2" y="0.015"/>
+			<Vertex x="-1.2" y="0.015"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="30" name="Notice board" ordering="250" image_file="notice_board.jpg" description="Regular notice board (1.2m wide)" category="Wall" height="10" flipable="false">
+		<Poly fill_colour="0x3D72B4" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.6" y="-0.015"/>
+			<Vertex x="0.6" y="-0.015"/>
+			<Vertex x="0.6" y="0.015"/>
+			<Vertex x="-0.6" y="0.015"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="31" name="Shelves (wall mounted)" ordering="260" image_file="wall_mounted_shelves.jpg" description="Wall mounted shelving" category="Wall" height="10" flipable="false">
+		<Poly fill_colour="0xB1A048" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.3" y="-0.15"/>
+			<Vertex x="0.3" y="-0.15"/>
+			<Vertex x="0.3" y="0.15"/>
+			<Vertex x="-0.3" y="0.15"/>
+		</Poly>
+		<Poly fill_colour="0xAAAAAA" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="-0.3" y="-0.15"/>
+			<Vertex x="-0.29" y="-0.15"/>
+			<Vertex x="-0.29" y="0.15"/>
+			<Vertex x="-0.3" y="0.15"/>
+		</Poly>
+		<Poly fill_colour="0xAAAAAA" fill_alpha="0.65" edge_colour="0x7e5d30" edge_alpha="1">
+			<Vertex x="0.29" y="-0.15"/>
+			<Vertex x="0.3" y="-0.15"/>
+			<Vertex x="0.3" y="0.15"/>
+			<Vertex x="0.29" y="0.15"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="32" name="Computer base unit" ordering="270" image_file="computer.jpg" description="" category="Misc items" height="0" flipable="false" field_label="Machine name">
+		<Poly fill_colour="0x333333" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.25" y="-0.11"/>
+			<Vertex x="0.25" y="-0.11"/>
+			<Vertex x="0.25" y="0.11"/>
+			<Vertex x="-0.25" y="0.11"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="33" name="Computer monitor" ordering="280" image_file="monitor.jpg" description="" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0xB2B2B2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.14" y="-0.07"/>
+			<Vertex x="0.14" y="-0.07"/>
+			<Vertex x="0.14" y="0.07"/>
+			<Vertex x="-0.14" y="0.07"/>
+		</Poly>
+		<Poly fill_colour="0xC2C2C2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.25" y="-0.02"/>
+			<Vertex x="0.25" y="-0.02"/>
+			<Vertex x="0.25" y="0.02"/>
+			<Vertex x="-0.25" y="0.02"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="34" name="Printer" ordering="285" image_file="printer.jpg" description="" category="Misc items" height="6" flipable="false" field_label="Printer name">
+		<Poly fill_colour="0xB2B2B2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.18" y="-0.23"/>
+			<Vertex x="0.18" y="-0.23"/>
+			<Vertex x="0.18" y="0.23"/>
+			<Vertex x="-0.18" y="0.23"/>
+		</Poly>		
+		<Poly fill_colour="0x828282" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.15" y="0.18"/>
+			<Vertex x="0.15" y="0.18"/>
+			<Vertex x="0.15" y="0.15"/>
+			<Vertex x="-0.15" y="0.15"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="35" name="Telephone" ordering="290" image_file="telephone.jpg" description="" category="Misc items" height="6" flipable="false" field_label="Phone number">
+		<Poly fill_colour="0xC2C2C2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.09" y="-0.09"/>
+			<Vertex x="-0.02" y="-0.09"/>
+			<Vertex x="-0.02" y="0.09"/>
+			<Vertex x="0.09" y="0.09"/>
+		</Poly>
+		<Poly fill_colour="0x444444" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.02" y="-0.09"/>
+			<Vertex x="-0.09" y="-0.09"/>
+			<Vertex x="-0.09" y="0.09"/>
+			<Vertex x="-0.02" y="0.09"/>
+		</Poly>
+		<Poly fill_colour="0x222222" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.03" y="-0.08"/>
+			<Vertex x="-0.08" y="-0.08"/>
+			<Vertex x="-0.08" y="0.08"/>
+			<Vertex x="-0.03" y="0.08"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="36" name="Pedestal fan" ordering="300" image_file="pedestal_fan.jpg" description="Free standing fan" category="Misc items" height="1" flipable="false">
+		<Poly fill_colour="0xBBBBBB" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.240" y="0.212"/>
+			<Vertex x="-0.212" y="0.242"/>
+			<Vertex x="0.000" y="0.028"/>
+			<Vertex x="0.212" y="0.240"/>
+			<Vertex x="0.240" y="0.212"/>
+			<Vertex x="0.028" y="0.000"/>
+			<Vertex x="0.240" y="-0.212"/>
+			<Vertex x="0.212" y="-0.240"/>
+			<Vertex x="0.000" y="-0.028"/>
+			<Vertex x="-0.212" y="-0.240"/>
+			<Vertex x="-0.240" y="-0.212"/>
+			<Vertex x="-0.028" y="-0.000"/>
+		</Poly>
+		<Poly fill_colour="0xEEEEEE" fill_alpha="0.8" edge_colour="0x444444" edge_alpha="1">
+			<Vertex x="-0.215" y="-0.040"/>
+			<Vertex x="-0.215" y="0.020"/>
+			<Vertex x="-0.110" y="0.050"/>
+			<Vertex x="-0.070" y="0.160"/>
+			<Vertex x="0.070" y="0.160"/>
+			<Vertex x="0.110" y="0.050"/>
+			<Vertex x="0.215" y="0.020"/>
+			<Vertex x="0.215" y="-0.040"/>
+			<Vertex x="0.110" y="-0.070"/>
+			<Vertex x="-0.110" y="-0.070"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="37" name="Desk fan" ordering="310" image_file="desk_fan.jpg" description="Small desk fan" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0xBBBBBB" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.080" y="0.040"/>
+			<Vertex x="0.076" y="0.071"/>
+			<Vertex x="0.065" y="0.099"/>
+			<Vertex x="0.047" y="0.121"/>
+			<Vertex x="0.025" y="0.135"/>
+			<Vertex x="0.000" y="0.140"/>
+			<Vertex x="-0.025" y="0.135"/>
+			<Vertex x="-0.047" y="0.121"/>
+			<Vertex x="-0.065" y="0.099"/>
+			<Vertex x="-0.076" y="0.071"/>
+			<Vertex x="-0.080" y="0.040"/>
+			<Vertex x="-0.076" y="0.009"/>
+			<Vertex x="-0.065" y="-0.019"/>
+			<Vertex x="-0.047" y="-0.041"/>
+			<Vertex x="-0.025" y="-0.055"/>
+			<Vertex x="0.000" y="-0.060"/>
+			<Vertex x="0.025" y="-0.055"/>
+			<Vertex x="0.047" y="-0.041"/>
+			<Vertex x="0.065" y="-0.019"/>
+			<Vertex x="0.076" y="0.009"/>
+			<Vertex x="0.080" y="0.040"/>
+		</Poly>
+		<Poly fill_colour="0xEEEEEE" fill_alpha="0.65" edge_colour="0x444444" edge_alpha="1">
+			<Vertex x="-0.140" y="-0.020"/>
+			<Vertex x="-0.140" y="0.020"/>
+			<Vertex x="-0.055" y="0.045"/>
+			<Vertex x="-0.040" y="0.145"/>
+			<Vertex x="0.040" y="0.145"/>
+			<Vertex x="0.055" y="0.045"/>
+			<Vertex x="0.140" y="0.020"/>
+			<Vertex x="0.140" y="-0.020"/>
+			<Vertex x="0.055" y="-0.045"/>
+			<Vertex x="-0.055" y="-0.045"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="38" name="Heater" ordering="320" image_file="heater.jpg" description="Free standing heater" category="Misc items" height="1" flipable="false">
+		<Poly fill_colour="0x999999" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.3" y="-0.05"/>
+			<Vertex x="0.3" y="-0.05"/>
+			<Vertex x="0.3" y="0.05"/>
+			<Vertex x="-0.3" y="0.05"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="39" name="Fan heater" ordering="330" image_file="fan_heater.jpg" description="Small desk fan heater" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0xe8e3b9" fill_alpha="0.65" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.09" y="-0.1"/>
+			<Vertex x="0.09" y="-0.1"/>
+			<Vertex x="0.09" y="0.1"/>
+			<Vertex x="-0.05" y="0.1"/>
+			<Vertex x="-0.09" y="0.06"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="40" name="Pot plant" ordering="340" image_file="pot_plant.jpg" description="" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0xB87333" fill_alpha="0.8" edge_colour="0xED9121" edge_alpha="1">
+			<Vertex x="-0.08" y="-0.08"/>
+			<Vertex x="0.08" y="-0.08"/>
+			<Vertex x="0.08" y="0.08"/>
+			<Vertex x="-0.08" y="0.08"/>
+		</Poly>		
+		<Poly fill_colour="0x7C9B09" fill_alpha="0.8" edge_colour="0x4B6E03" edge_alpha="1">
+			<Vertex x="-0.12" y="0"/>
+			<Vertex x="0" y="-0.12"/>
+			<Vertex x="0.12" y="0"/>
+			<Vertex x="0" y="0.12"/>
+		</Poly>		
+		<Poly fill_colour="0x9CCB19" fill_alpha="0.8" edge_colour="0x6B8E23" edge_alpha="1">
+			<Vertex x="-0.04" y="0"/>
+			<Vertex x="0" y="-0.04"/>
+			<Vertex x="0.04" y="0"/>
+			<Vertex x="0" y="0.04"/>
+		</Poly>
+	</ItemDef>
+</ItemDefinitions>
