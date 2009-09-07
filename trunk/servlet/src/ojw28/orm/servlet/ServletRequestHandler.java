@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -50,15 +49,14 @@ public abstract class ServletRequestHandler {
 
 	protected String getCrsid(HttpServletRequest request)
 	{
-		HttpSession lSession = request.getSession();
-		Object lUser = lSession.getAttribute("RavenRemoteUser");
+		String lUser = request.getHeader("X-AAPrincipal");
 		if(lUser == null)
 		{
 			return "no_auth";
 		}
 		else
 		{
-			return (String) lUser;
+			return lUser;
 		}
 	}
 	
