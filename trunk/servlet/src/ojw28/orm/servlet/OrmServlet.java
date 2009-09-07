@@ -1,14 +1,16 @@
 package ojw28.orm.servlet;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.xml.parsers.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 /**
  * Servlet implementation class TestServlet

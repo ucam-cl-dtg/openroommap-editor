@@ -1,13 +1,18 @@
 package ojw28.orm.utils;
 
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
-import org.apache.commons.dbcp.*;
-import org.apache.commons.pool.*;
-import org.apache.commons.pool.impl.*;
+import org.apache.commons.dbcp.ConnectionFactory;
+import org.apache.commons.dbcp.DriverConnectionFactory;
+import org.apache.commons.dbcp.PoolableConnectionFactory;
+import org.apache.commons.dbcp.PoolingDriver;
+import org.apache.commons.pool.KeyedObjectPoolFactory;
+import org.apache.commons.pool.impl.GenericKeyedObjectPoolFactory;
+import org.apache.commons.pool.impl.GenericObjectPool;
 
 /**
  * A pool of connections to the openroommap database. Connections are

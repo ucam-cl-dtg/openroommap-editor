@@ -1,17 +1,25 @@
 package ojw28.orm.servlet;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.http.*;
-import javax.xml.parsers.*;
-import javax.xml.transform.*;
-import ojw28.orm.*;
-import ojw28.orm.utils.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
 
-import org.w3c.dom.*;
+import ojw28.orm.ItemDef;
+import ojw28.orm.ItemDefPoly;
+import ojw28.orm.utils.DbConnectionPool;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 public class ItemDefHandler extends ServletRequestHandler 
 {

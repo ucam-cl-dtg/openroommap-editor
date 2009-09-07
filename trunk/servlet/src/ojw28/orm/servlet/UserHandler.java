@@ -1,9 +1,13 @@
 package ojw28.orm.servlet;
 
-import java.util.logging.*;
-import javax.servlet.http.*;
-import javax.xml.parsers.*;
-import javax.xml.transform.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
+
 import org.w3c.dom.Document;
 
 public class UserHandler extends ServletRequestHandler {

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ojw28/orm/utils/BuildDb.java" kind="src" path="servlet/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/abbot/acr31/jars/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/abbot/acr31/jars/commons-pool-1.5.2.jar"/>
+	<classpathentry kind="lib" path="/local/own/acr31/eclipse/apache-tomcat-6.0.16/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/Sloc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/postgresql-8.3-603.jdbc4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

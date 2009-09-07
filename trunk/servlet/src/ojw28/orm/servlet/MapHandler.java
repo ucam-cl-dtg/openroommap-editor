@@ -1,43 +1,52 @@
 package ojw28.orm.servlet;
 
-import sloc.map25d.*;
-import java.sql.*;
-import java.util.logging.*;
-import javax.servlet.http.*;
-import javax.xml.parsers.*;
-import javax.xml.transform.*;
-import org.w3c.dom.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+import sloc.map25d.Map25D;
 
 public class MapHandler extends ServletRequestHandler {
 
-    private static Logger mLogger = Logger.getLogger("ojw28.orm.servlet.MapHandler");
+	private static Logger mLogger = Logger
+			.getLogger("ojw28.orm.servlet.MapHandler");
 	private Document mDocument;
-	
-	public MapHandler() throws ParserConfigurationException, TransformerConfigurationException, SQLException
-	{
+
+	public MapHandler() throws ParserConfigurationException,
+			TransformerConfigurationException, SQLException {
 		super("/getmap");
 		buildMapDocument();
 		mLogger.info("Handler successfully initialised");
 	}
 
-	public void handleRequest(HttpServletRequest request, HttpServletResponse response) {
-		try
-		{
+	public void handleRequest(HttpServletRequest request,
+			HttpServletResponse response) {
+		try {
 			writeXmlResponse(mDocument, response);
+		} catch (Exception lE) {
+			mLogger.log(Level.SEVERE,
+					"Exception caught while handling request :\t"
+							+ request.getPathInfo(), lE);
 		}
-		catch(Exception lE)
-		{                
-			mLogger.log(Level.SEVERE, "Exception caught while handling request :\t"+ request.getPathInfo(), lE);
-		}
-	}  	
-	
-	public void buildMapDocument() throws SQLException
-	{
+	}
+
+	public void buildMapDocument() throws SQLException {
 		Document lDocument = createDocument("MapRequestResponse");
-				
-		Connection lConnection = ojw28.orm.utils.DbConnectionPool.getSingleton().getConnection();
-		try
-		{
+
+		Connection lConnection = ojw28.orm.utils.DbConnectionPool
+				.getSingleton().getConnection();
+		try {
 			sloc.db.MapLoader lLoader = new sloc.db.MapLoader();
 
 			Map25D lGroundMap = lLoader.loadSubmap(lConnection, "Ground");
@@ -54,7 +63,7 @@ public class MapHandler extends ServletRequestHandler {
 			Element lSecondXml = lSecondMap.writeToXml(lDocument);
 			lSecondXml.setAttribute("name", "Second");
 			lSecondXml.setAttribute("level", "2");
-			
+
 			Element lMapElement = lDocument.createElement("Map");
 			lDocument.getDocumentElement().appendChild(lMapElement);
 			lMapElement.appendChild(lGroundXml);
@@ -63,33 +72,28 @@ public class MapHandler extends ServletRequestHandler {
 
 			Element lOccupancyElement = lDocument.createElement("Occupancy");
 			lDocument.getDocumentElement().appendChild(lOccupancyElement);
-			
-			PreparedStatement lOccupantsStatement = lConnection.prepareStatement("SELECT * FROM occupants_table");
-			try
-			{
+
+			PreparedStatement lOccupantsStatement = lConnection
+					.prepareStatement("SELECT * FROM occupants_table");
+			try {
 				ResultSet lUpdates = lOccupantsStatement.executeQuery();
-				while(lUpdates.next())
-				{
+				while (lUpdates.next()) {
 					String lCrsid = lUpdates.getString("crsid");
 					int lRoom = lUpdates.getInt("roomid");
 
 					Element lItemElement = lDocument.createElement("Mapping");
-					lItemElement.setAttribute("crsid", ""+lCrsid);
-					lItemElement.setAttribute("roomid", ""+lRoom);
+					lItemElement.setAttribute("crsid", "" + lCrsid);
+					lItemElement.setAttribute("roomid", "" + lRoom);
 					lOccupancyElement.appendChild(lItemElement);
 				}
 				lUpdates.close();
-			}
-			finally
-			{
+			} finally {
 				lOccupantsStatement.close();
 			}
-		}
-		finally
-		{
+		} finally {
 			lConnection.close();
 		}
 		mDocument = lDocument;
 	}
-	
+
 }
