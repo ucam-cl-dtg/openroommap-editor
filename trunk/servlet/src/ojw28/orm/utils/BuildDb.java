@@ -1,4 +1,5 @@
 package ojw28.orm.utils;
+
 import java.io.*;
 import java.sql.*;
 import javax.xml.parsers.*;
@@ -99,7 +100,7 @@ public class BuildDb {
 			Document document = sloc.XmlHelper.parse(new File(iMapXml));
 			Map25D lMap = new Map25D();
 			lMap.readFromXml(document.getDocumentElement());
-
+			
 			for(Room lRoom : lMap.getRooms())
 			{
 				String lRoomValues = lRoom.getUid()+",'"+lRoom.getName()+"',"+lRoom.getAccessLevel();
@@ -107,7 +108,7 @@ public class BuildDb {
 
 				for(FloorPoly lPoly : lRoom.getFloorPolys())
 				{
-					lS.executeUpdate("INSERT INTO roompoly_table VALUES("+lPoly.getUid()+","+lRoom.getUid()+")");
+					//lS.executeUpdate("INSERT INTO roompoly_table VALUES("+lPoly.getUid()+","+lRoom.getUid()+")");
 					String lPolyValues = "";
 					for(int li = 0; li < lPoly.getVertices().length; li+=3)
 					{
@@ -127,35 +128,12 @@ public class BuildDb {
 					}
 				}
 			}
-
+			
 			lS.executeUpdate("INSERT INTO submap_table VALUES('0','Ground')");
 			lS.executeUpdate("INSERT INTO submap_table VALUES('1','First')");	
 			lS.executeUpdate("INSERT INTO submap_table VALUES('2','Second')");	
-
-			for(Room lRoom : lMap.getRooms())
-			{
-				if(lRoom.getBounds().getMinZ() == 0f && lRoom.getBounds().getMaxZ() == 0f)
-				{
-					for(FloorPoly lPoly : lRoom.getFloorPolys())
-					{
-						lS.executeUpdate("INSERT INTO submappoly_table VALUES('2',"+lPoly.getUid()+")");			    		
-					}	    	
-				}
-				else if(lRoom.getBounds().getMinZ() == -3.52f && lRoom.getBounds().getMaxZ() == -3.52f)
-				{
-					for(FloorPoly lPoly : lRoom.getFloorPolys())
-					{
-						lS.executeUpdate("INSERT INTO submappoly_table VALUES('1',"+lPoly.getUid()+")");			    		
-					}	    	
-				}
-				else if(lRoom.getBounds().getMinZ() == -7.04f && lRoom.getBounds().getMaxZ() == -7.04f)
-				{
-					for(FloorPoly lPoly : lRoom.getFloorPolys())
-					{
-						lS.executeUpdate("INSERT INTO submappoly_table VALUES('0',"+lPoly.getUid()+")");			    		
-					}	    	
-				}
-			}
+			
+			populateSubmaps(lMap, lS);
 
 			iConnection.commit();
 		}
@@ -167,6 +145,31 @@ public class BuildDb {
 		finally
 		{
 			lS.close(); 
+		}
+	}
+	
+	private void populateSubmaps(Map25D iMap, Statement iS) throws SQLException
+	{
+		for(Room lRoom : iMap.getRooms())
+		{
+			if(lRoom.getName().equals("SW_Landing"))
+			{
+			for(FloorPoly lPoly : lRoom.getFloorPolys())
+			{
+				if(lPoly.getBounds().getMinZ() <= 0 && lPoly.getBounds().getMinZ() > -1.76f)
+				{
+					iS.executeUpdate("INSERT INTO submappoly_table VALUES('2',"+lPoly.getUid()+")");		    		
+				}
+				if(lPoly.getBounds().getMinZ() < -1.76f && lPoly.getBounds().getMinZ() > -5.28f)
+				{
+					iS.executeUpdate("INSERT INTO submappoly_table VALUES('1',"+lPoly.getUid()+")");		    		
+				}
+				if(lPoly.getBounds().getMinZ() < -5.28f && lPoly.getBounds().getMinZ() >= -7.04f)
+				{
+					iS.executeUpdate("INSERT INTO submappoly_table VALUES('0',"+lPoly.getUid()+")");		    		
+				}
+			}
+			}
 		}
 	}
 
@@ -365,12 +368,11 @@ public class BuildDb {
 		try
 		{
 			BuildDb lDb = new BuildDb();
-			
 			Connection lConnection = getNewConnection();
 			lDb.createMapTables(lConnection);
-			lDb.importMap(lConnection, "wgb.xml");
+			lDb.importMap(lConnection, "data/wgb.xml");
 			lDb.createItemTables(lConnection);
-			lDb.populateItemTables(lConnection, "item_definitions.xml");
+			lDb.populateItemTables(lConnection, "/data/item_definitions.xml");
 			
 			lConnection.close();
 		}

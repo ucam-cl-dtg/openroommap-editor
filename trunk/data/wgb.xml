@@ -2537,7 +2537,7 @@
 <Vertex edgetype="wall" x="964.24" y="997.17" z="0.0"/>
 </Poly>
 </Room>
-<Room accesslevel="0" name="SE16" uid="100">
+<Room accesslevel="0" name="SE14" uid="100">
 <Poly uid="93">
 <Vertex edgetype="wall" x="955.11" y="1016.2" z="0.0"/>
 <Vertex edgetype="wall" x="959.2" y="1016.2" z="0.0"/>
@@ -6556,8 +6556,12 @@
 <Vertex edgetype="connector" target="23" x="1000.26" y="1052.48" z="0.0"/>
 <Vertex edgetype="wall" x="1001.19" y="1052.48" z="0.0"/>
 <Vertex edgetype="wall" x="1001.19" y="1052.15" z="0.0"/>
-<Vertex edgetype="wall" x="1006.29" y="1052.15" z="0.0"/>
-<Vertex edgetype="wall" x="1006.29" y="1046.48" z="0.0"/>
+<Vertex edgetype="wall" x="1001.21" y="1052.15" z="0.0"/>
+<Vertex edgetype="wall" x="1001.21" y="1049.85" z="0.0"/>
+<Vertex edgetype="connector" target="1001" x="1001.31" y="1049.85" z="0.0"/>
+<Vertex edgetype="wall" x="1001.31" y="1048.85" z="0.0"/>
+<Vertex edgetype="wall" x="1001.21" y="1048.85" z="0.0"/>
+<Vertex edgetype="wall" x="1001.21" y="1046.48" z="0.0"/>
 <Vertex edgetype="wall" x="1000.94" y="1046.48" z="0.0"/>
 <Vertex edgetype="connector" target="20" x="1000.94" y="1046.15" z="0.0"/>
 <Vertex edgetype="wall" x="999.18" y="1046.15" z="0.0"/>
@@ -7331,6 +7335,16 @@
 </Poly>
 </Room>
 
+<Room accesslevel="0" name="SW00" uid="320">
+<Poly uid="1001">
+<Vertex edgetype="wall" x="1001.31" y="1052.15" z="0.0"/>
+<Vertex edgetype="wall" x="1006.29" y="1052.15" z="0.0"/>
+<Vertex edgetype="wall" x="1006.29" y="1046.48" z="0.0"/>
+<Vertex edgetype="wall" x="1001.31" y="1046.48" z="0.0"/>
+<Vertex edgetype="connector" target="25" x="1001.31" y="1048.85" z="0.0"/>
+<Vertex edgetype="wall" x="1001.31" y="1049.85" z="0.0"/>
+</Poly>
+</Room>
 
 </Map25D>
 
