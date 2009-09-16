@@ -584,6 +584,46 @@
 			<Vertex x="-0.15" y="0.15"/>
 		</Poly>
 	</ItemDef>
+	<ItemDef id="42" name="Photocopier (freestanding)" ordering="296" image_file="photocopier.jpg" description="" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0xB2B2B2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.35" y="-0.3"/>
+			<Vertex x="0.35" y="-0.3"/>
+			<Vertex x="0.35" y="0.3"/>
+			<Vertex x="-0.35" y="0.3"/>
+		</Poly>		
+		<Poly fill_colour="0x828282" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.33" y="-0.15"/>
+			<Vertex x="0.33" y="-0.15"/>
+			<Vertex x="0.33" y="0.28"/>
+			<Vertex x="-0.33" y="0.28"/>
+		</Poly>	
+		<Poly fill_colour="0x828282" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.1" y="-0.28"/>
+			<Vertex x="0.12" y="-0.28"/>
+			<Vertex x="0.12" y="-0.2"/>
+			<Vertex x="-0.1" y="-0.2"/>
+		</Poly>	
+		<Poly fill_colour="0x828282" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="0.18" y="-0.28"/>
+			<Vertex x="0.28" y="-0.28"/>
+			<Vertex x="0.28" y="-0.2"/>
+			<Vertex x="0.18" y="-0.2"/>
+		</Poly>
+	</ItemDef>
+	<ItemDef id="43" name="Scanner" ordering="298" image_file="scanner.jpg" description="" category="Misc items" height="6" flipable="false">
+		<Poly fill_colour="0x5C85FF" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.15" y="-0.25"/>
+			<Vertex x="0.15" y="-0.25"/>
+			<Vertex x="0.15" y="0.25"/>
+			<Vertex x="-0.15" y="0.25"/>
+		</Poly>		
+		<Poly fill_colour="0x5C85FF" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
+			<Vertex x="-0.12" y="-0.19"/>
+			<Vertex x="0.12" y="-0.19"/>
+			<Vertex x="0.12" y="0.22"/>
+			<Vertex x="-0.12" y="0.22"/>
+		</Poly>	
+	</ItemDef>
 	<ItemDef id="35" name="Telephone" ordering="290" image_file="telephone.jpg" description="" category="Misc items" height="6" flipable="false" field_label="Phone number">
 		<Poly fill_colour="0xC2C2C2" fill_alpha="0.8" edge_colour="0x000000" edge_alpha="1">
 			<Vertex x="0.09" y="-0.09"/>

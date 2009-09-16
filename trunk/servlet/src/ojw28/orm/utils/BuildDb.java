@@ -281,6 +281,7 @@ public class BuildDb {
 		PreparedStatement lGetPolyId = iConnection.prepareStatement("SELECT nextval('poly_id_seq')");
 		try
 		{
+			System.out.println(iItem.getItemDefId());
 			lInsertItem = iConnection.prepareStatement("INSERT INTO " +
 					"item_definition_table(def_id,name,category,image_file,description,height,flipable,field_label,ordering) VALUES" +
 					"(?,?,?,?,?,?,?,?,?)");
@@ -321,7 +322,6 @@ public class BuildDb {
 				lInsertPoly.setFloat(6, lPoly.getEdgeAlpha());
 				
 				lInsertPoly.executeUpdate();
-				System.out.println(lInsertPoly.toString()+";");
 				
 				lInsertVertex.setInt(1, lPolyId);
 			    for(int lj = 0; lj < lPoly.getVertices().length; lj+=2)
@@ -369,10 +369,10 @@ public class BuildDb {
 		{
 			BuildDb lDb = new BuildDb();
 			Connection lConnection = getNewConnection();
-			lDb.createMapTables(lConnection);
-			lDb.importMap(lConnection, "data/wgb.xml");
-			lDb.createItemTables(lConnection);
-			lDb.populateItemTables(lConnection, "/data/item_definitions.xml");
+			//lDb.createMapTables(lConnection);
+			//lDb.importMap(lConnection, "data/wgb.xml");
+			//lDb.createItemTables(lConnection);
+			lDb.populateItemTables(lConnection, "data/new.xml");
 			
 			lConnection.close();
 		}
