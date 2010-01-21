@@ -349,7 +349,8 @@ public class PlacedItemHandler extends ServletRequestHandler {
 			finally
 			{
 				lFetchUpdates.close();
-			}
+			}cd
+			
 		}
 		finally
 		{
