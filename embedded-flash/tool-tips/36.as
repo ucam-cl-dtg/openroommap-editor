@@ -1,0 +1,1 @@
+lTip.fadeAndRemove();
