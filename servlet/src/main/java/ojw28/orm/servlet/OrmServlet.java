@@ -37,7 +37,9 @@ public class OrmServlet extends HttpServlet {
 	public void init() throws ServletException
 	{
 	    try {
-	        FileHandler lLogger = new FileHandler("orm.log");
+		String logFileName = getInitParameter("LOG_FILE");
+		if (logFileName == null) throw new ServletException("Please specify init parameter LOG_FILE");
+	        FileHandler lLogger = new FileHandler(logFileName);
 	        Logger.getLogger("ojw28.orm.servlet.OrmServlet").addHandler(lLogger);
 	        Logger.getLogger("ojw28.orm.servlet.ItemDefHandler").addHandler(lLogger);
 	        Logger.getLogger("ojw28.orm.servlet.MapHandler").addHandler(lLogger);
